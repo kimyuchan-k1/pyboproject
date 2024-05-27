@@ -11,3 +11,7 @@ SQLALCHEMY_DATABASE_URI = 'sqlite:///{}'.format(os.path.join(BASE_DIR,'pybo.db')
 
 # sqlalchemy 의 이벤트 처리하는 옵션을 비활성화함
 SQLALCHEMY_TRACK_MODIFICATIONS =False
+
+
+# 현재는 간단하게 만들지만 실제 웹사이트를 제작할때는 이렇게 문자열을 만들면 안된다.
+SECRET_KEY = "dev"
